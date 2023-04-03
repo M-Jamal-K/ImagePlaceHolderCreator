@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Placeholder App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>PlaceHolder Site</h1>
+        <p>
+            This site will generate placeholder images of different sizes and colors. You can access a placeholder image
+            by entering its size in pixels in the URL, like this:
+        </p>
+        <ul>
+            <li><a href="/100">/100</a> - generates a 100x100 image</li>
+            <li><a href="/500">/500</a> - generates a 500x500 image</li>
+            <li><a href="/700">/700</a> - generates a 700x700 image</li>
+        </ul>
+        <p>
+            You can also change the background color, width, height, and placeholder text and its color using
+            parameters, like this:
+            <code>Params ==> w=Width, h=Height, c=Background Color, txt=PlaceHolder Text, txtc=TextColor</code>
+        </p>
+        <ul>
+            <li><a href="/?w=400&h=200&c=skyblue">/?w=400&amp;h=200&amp;c=skyblue</a> - generates a 400x200 image with
+                skyblue background</li>
+            <li><a href="/?w=300&h=600&c=skyblue&txt=Hello%20World&txtc=green">/?w=300&amp;h=600&amp;c=skyblue&amp;txt=Hello
+                    World&amp;txtc=green.</a>
+            </li>
+            <li> - generates a 300x600 skyblue image with the text "Hello World" in green.</li>
+            <li>if you leave some parameters, The default value will added to them.</li>
+            <li>Provide color in RGB format or name eg: rgb(255, 255, 0) Or Green/yellow etc.</li>
+        </ul>
+    </div>
+</body>
+
+</html>
