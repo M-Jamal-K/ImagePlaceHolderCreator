@@ -3,7 +3,7 @@ const { createCanvas } = require("canvas");
 
 // express app
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3200;
 
 // Listen for request
 app.listen(port, () => {
